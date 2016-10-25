@@ -14,7 +14,6 @@
 
     <!-- Styles -->
     <link href="{{ URL::asset('css/app.css') }}" rel="stylesheet">
-
     @yield('head')
 
 </head>
@@ -92,6 +91,7 @@
     </div>
 
     <!-- Scripts -->
+    <script src="https://use.fontawesome.com/ff3a8e59a8.js"></script>
     <script src="/js/app.js"></script>
 
     @yield('footer')
