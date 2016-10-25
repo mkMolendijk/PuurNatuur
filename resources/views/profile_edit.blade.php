@@ -51,7 +51,64 @@
                         </form>
                     </div>
 
-                    
+                    <div class="col-md-6">
+                        Currently building PW update
+                        {{--<form class="form-horizontal" role="form" method="POST" action="{{ url('profile/update/'.$user->id) }}">--}}
+                            {{--{{ method_field('PATCH') }}--}}
+                            {{--{{ csrf_field() }}--}}
+                            {{--<div class="form-group{{ $errors->has('old_password') ? ' has-error' : '' }}">--}}
+                                {{--<label for="password" class="col-md-4 control-label">Old Password</label>--}}
+
+                                {{--<div class="col-md-6">--}}
+                                    {{--<input id="password" type="password" class="form-control" name="password" required>--}}
+
+                                    {{--@if ($errors->has('password'))--}}
+                                        {{--<span class="help-block">--}}
+                                        {{--<strong>{{ $errors->first('password') }}</strong>--}}
+                                    {{--</span>--}}
+                                    {{--@endif--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+
+                            {{--<div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">--}}
+                                {{--<label for="password" class="col-md-4 control-label">Password</label>--}}
+
+                                {{--<div class="col-md-6">--}}
+                                    {{--<input id="password" type="password" class="form-control" name="password" required>--}}
+
+                                    {{--@if ($errors->has('password'))--}}
+                                        {{--<span class="help-block">--}}
+                                        {{--<strong>{{ $errors->first('password') }}</strong>--}}
+                                    {{--</span>--}}
+                                    {{--@endif--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+
+                            {{--<div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">--}}
+                                {{--<label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>--}}
+
+                                {{--<div class="col-md-6">--}}
+                                    {{--<input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>--}}
+
+                                    {{--@if ($errors->has('password_confirmation'))--}}
+                                        {{--<span class="help-block">--}}
+                                        {{--<strong>{{ $errors->first('password_confirmation') }}</strong>--}}
+                                    {{--</span>--}}
+                                    {{--@endif--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+
+                            {{--<div class="form-group">--}}
+                                {{--<div class="col-md-6 col-md-offset-4">--}}
+                                    {{--<button type="submit" class="btn btn-primary pull-right">--}}
+                                        {{--Update Password--}}
+                                    {{--</button>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+
+                        {{--</form>--}}
+
+                    </div>
                 </div>
             </div>
         </div>

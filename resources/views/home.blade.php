@@ -12,7 +12,7 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Graph #1
+                        Temperature
                     </div>
                     <div class="panel-body">
                         <div id="graph1">
@@ -23,7 +23,7 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Graph #2
+                        Soil
                     </div>
                     <div class="panel-body">
                         <div id="graph2">
@@ -34,7 +34,7 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Graph #3
+                        Light
                     </div>
                     <div class="panel-body">
                         <div id="graph3">
@@ -71,33 +71,28 @@
         Morris.Donut({
             element: 'graph1',
             data: [
-                {value: 70, label: 'foo'},
-                {value: 15, label: 'bar'},
-                {value: 10, label: 'baz'},
-                {value: 5, label: 'A really really long label'}
+                {value: 100, label: 'Celsius'}
             ],
-            formatter: function (x) { return x + "%"}
+            formatter: function (x) { return 27 + "C"}
         }).on('click', function(i, row){
             console.log(i, row);
+
         });
         Morris.Donut({
             element: 'graph2',
             data: [
-                {value: 50, label: 'foo'},
-                {value: 50, label: 'bar'}
+                {value: 100, label: 'Soil'},
             ],
-            formatter: function (x) { return x + "%"}
+            formatter: function (x) { return 768 + ""}
         }).on('click', function(i, row){
             console.log(i, row);
         });
         Morris.Donut({
             element: 'graph3',
             data: [
-                {value: 60, label: 'foo'},
-                {value: 20, label: 'bar'},
-                {value: 20, label: 'baz'}
+                {value: 100, label: 'Light'}
             ],
-            formatter: function (x) { return x + "%"}
+            formatter: function (x) { return 628 + ""}
         }).on('click', function(i, row){
             console.log(i, row);
         });
